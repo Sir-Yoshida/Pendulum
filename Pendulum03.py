@@ -4,10 +4,10 @@ import numpy as np
 import math
 import random
 #
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 # import matplotlib.pyplot as plt
 # from matplotlib.animation import FuncAnimation
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 #
 class Inverted_Pendulum(): # 台車と振り子の動作
     def __init__(self, x, theta, noisy=True): # 初期値
@@ -61,7 +61,7 @@ class Inverted_Pendulum(): # 台車と振り子の動作
         return self.x
 
 #
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 # def movie(x_history, angle_history, l, t, my_action): # 座標リストから動画を描画
 #   range_width = l * 2.5
 #   fig = plt.figure()
@@ -70,7 +70,7 @@ class Inverted_Pendulum(): # 台車と振り子の動作
 #   ax.grid()
 #   line, = ax.plot([], [], 'ro--', lw=2, markersize=8)
 #   time_text = ax.text(0.02, 0.95, '', transform = ax.transAxes)
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 #
     def init():
         line.set_data([], [])
@@ -84,13 +84,13 @@ class Inverted_Pendulum(): # 台車と振り子の動作
         return line, time_text
 
 #
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 #   ani = FuncAnimation(fig, animate, frames=range(len(x_history)),
 #                       interval=t*1000, blit=True, init_func=init, repeat=False)
 #   ani.save("pendulum.gif", writer="imagemagick")
 #   plt.show()
 #   #plt.close()
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 #
 def main():
     x_history_list = [0.] # x座標を格納するリスト。初期座標にゼロ設定
@@ -107,9 +107,9 @@ def main():
 
     # 取得した座標リストを元に動画再生
 #
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 #   movie(x_history_list, angle_history_list, l, t, my_action)
-# ***** Modified on 06/13/2020 *****
+# ***** Modified on 06/12/2020 *****
 #
 if __name__ == '__main__':
     M = 10 # 台車の重さ[kg]。値を大きく例えば100にすると単振り子に近くなる。
